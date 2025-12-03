@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Code Snippet Vault</title>
+    <link rel="stylesheet" href="public/styles.css"> <!-- Link to the stylesheet -->
+</head>
+<body>
+<main class="wrap">
+    <h1>Code snippet vault</h1>
+    <form id="newSnippet" class="card">
+        <h2>Add snippet</h2>
+        <div class="field-group">
+            <label>Title
+                <input name="title" class="form-input" required placeholder="e.g. Recursion helper function" />
+            </label>
+            <label>Language (e.g. JavaScript)
+                <input name="language" class="form-input" required placeholder="e.g. javascript, python, go"/>
+            </label>
+            <label>Description
+                <input name="description" class="form-input" required placeholder="Short explanation of what this snippet does"/>
+            </label>
+            <label>Code
+                <textarea name="code" class="form-input" rows="5" required placeholder="// paste your code here"></textarea>
+            </label>
+            <label>Tags
+                <input name="tags" class="form-input" placeholder="e.g. array, recursion, utils (comma-separated)"/>
+            </label>
+        </div>
+        <button class="create-button">Create</button>
+    </form>
+
+    <section class="card">
+        <h2>Snippets</h2>
+        <div class="filters">
+            <input
+                    id="q"
+                    placeholder="search by language (e.g. JavaScript)"
+                    aria-label="search by language"
+            />
+            <button id="applyFilters" type="button" class="apply-button">Apply</button>
+        </div>
+        <table id="grid">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Language</th>
+                    <th>Code</th>
+                    <th>Description</th>
+                    <th>Tags</th>
+                    <th>Created</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+</main>
+<script src="public/app.js"></script>
+</body>
+</html>
