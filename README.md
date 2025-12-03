@@ -4,7 +4,7 @@ A full-stack developer tool built with Node.js, Express, MongoDB, and Mongoose.
 It allows users to create, store, filter, and manage reusable code snippets across multiple languages — creating a personal knowledge base for developers.
 
 ## Live Deployment
-Live:
+Live: https://snippet-api-ulwt.onrender.com/
 
 ## Run Locally
 

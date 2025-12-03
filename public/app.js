@@ -28,8 +28,8 @@ async function load() {
     params.set("lang", langFilterInput.value.trim().toLowerCase());
   }
 
-  // Example of limiting results: latest 20
-  params.set("limit", "20");
+  // Example of limiting results: latest 5
+  params.set("limit", "5");
 
   const res = await fetch("/api/snippets?" + params.toString());
   if (!res.ok) {
